@@ -87,9 +87,6 @@ public class Main {
                         break;
                     }
                     Collections.sort(freeTaxis, (a, b) -> a.total_Earnings - b.total_Earnings);
-                    for (Taxi t : freeTaxis) {
-                        System.out.println(t.taxi_Id);
-                    }
                     BookTaxi(id, freeTaxis, pickup, picktime, drop);
                     break;
                 }
